@@ -1,0 +1,8 @@
+./app
+./documents
+./*.js
+./*.json
+./*.txt
+./.gitignore
+./Dockerfile
+./README.md
