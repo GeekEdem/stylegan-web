@@ -11,7 +11,7 @@
     "start3": "python3 ./http_server.py",
     "docker:build": "docker build -t $npm_package_name .",
     "docker:run": "npm run docker:build && npm run docker:run:only",
-    "docker:run:only": "docker run -p $npm_package_config_port:$npm_package_config_port $npm_package_name"
+    "docker:run:only": "docker run --gpus all -p $npm_package_config_port:$npm_package_config_port $npm_package_name"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.0.0",
